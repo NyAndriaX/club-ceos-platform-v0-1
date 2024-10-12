@@ -17,7 +17,7 @@ const AuthPage = () => {
                     header={
                         <div className="p-4 border-b border-gray-300">
                             <h1 className="text-2xl text-center font-bold text-fuchsia-700">
-                                &lt; Logo &gt;
+                                &lt; Logo. &gt;
                             </h1>
                         </div>
                     }
@@ -52,7 +52,7 @@ const AuthPage = () => {
                             href="/signup"
                             className="text-sm text-blue-600 hover:underline"
                         >
-                            Créer un compte
+                            Faire une adhésion en tant que membre
                         </a>
                     </div>
                 </Card>
