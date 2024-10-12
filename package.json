@@ -9,11 +9,11 @@
     "lint": "next lint",
     "db:generate": "prisma generate",
     "db:reset": "npx prisma migrate dev --name init",
-    "db:seed": "npx prisma db push && npx tsx ./src/database/seeders/index.ts",
+    "db:seed": "npx prisma db push && npx tsx ./src/prisma/seed/index.ts",
     "stripe-listner": "stripe listen --forward-to localhost:3000/api/webhooks/stripe"
   },
   "prisma": {
-    "schema": "src/database/models/schema.prisma"
+    "schema": "src/prisma/schema.prisma"
   },
   "dependencies": {
     "@faker-js/faker": "^9.0.0",
@@ -68,6 +68,7 @@
     "zustand": "^4.5.5"
   },
   "devDependencies": {
+    "@eslint/js": "^9.12.0",
     "@types/bcryptjs": "^2.4.6",
     "@types/crypto-js": "^4.2.2",
     "@types/jsonwebtoken": "^9.0.6",
@@ -77,11 +78,16 @@
     "@types/react-dom": "^18",
     "@types/react-slick": "^0.23.13",
     "@types/reflect-metadata": "^0.1.0",
-    "eslint": "^8",
+    "eslint": "^9.12.0",
     "eslint-config-next": "14.2.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.1",
     "husky": "^9.1.4",
     "lint-staged": "^15.2.9",
-    "typescript": "^5"
+    "prettier": "^3.3.3",
+    "typescript": "^5",
+    "typescript-eslint": "^8.8.1"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
